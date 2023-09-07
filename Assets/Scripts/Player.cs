@@ -24,19 +24,19 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            gameObject.transform.Translate(Vector3.up * speed);
+            gameObject.transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            gameObject.transform.Translate(Vector3.down * speed);
+            gameObject.transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            gameObject.transform.Translate(Vector3.right * speed);
+            gameObject.transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            gameObject.transform.Translate(Vector3.left * speed);
+            gameObject.transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

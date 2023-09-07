@@ -15,7 +15,7 @@ public class PlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Translate(Vector3.right * speed);
+        gameObject.transform.Translate(Vector3.right * speed * Time.deltaTime);
         if ( gameObject.transform.position.x > xMax)
         {
             Destroy(gameObject);

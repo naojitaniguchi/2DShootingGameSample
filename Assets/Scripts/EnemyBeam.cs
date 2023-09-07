@@ -20,7 +20,7 @@ public class EnemyBeam : MonoBehaviour
     void Update()
     {
 
-        Vector3 moveVec = gameObject.transform.rotation * Vector3.right * speed * -1.0f;
+        Vector3 moveVec = gameObject.transform.rotation * Vector3.right * speed * -1.0f * Time.deltaTime;
         gameObject.transform.position += moveVec;
         if (gameObject.transform.position.x > xMax)
         {
